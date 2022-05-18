@@ -5,6 +5,7 @@ const duplicates = [
     'potatoe',
     'pasta',
     'ice-cream',
+    'ice-cream',
     'pizza',
     'chicken',
     'onion rings',
@@ -12,13 +13,13 @@ const duplicates = [
     'soda',
 ];
 function removeDuplicates() {
-    const result = []
+    const comprobados = []
     duplicates.forEach((item)=>{
-        if(!result.includes(item)){
-            result.push(item);
+        if(!comprobados.includes(item)){
+            comprobados.push(item);
         }
     });
-    return result
+    return comprobados
 };
 
 console.log(removeDuplicates(duplicates))
