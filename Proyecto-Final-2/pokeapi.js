@@ -62,6 +62,7 @@ function createPokemonCard(pokemon) {
     // Condicional para comprovar si hay uno o dos tipos de pokemon
 
     if (pokemon.types[1]){
+        
         const pokeInnerHTML = `
         <div class="card-top">
             <h5 class="number">#${pokemon.id
