@@ -60,7 +60,7 @@ function createPokemonCard(pokemon) {
 	pokemonEl.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%, #ffffff 36%)`; 
     
     // Condicional para comprovar si hay uno o dos tipos de pokemon
-    
+
     if (pokemon.types[1]){
         const pokeInnerHTML = `
         <div class="card-top">
@@ -70,7 +70,7 @@ function createPokemonCard(pokemon) {
             <h5 class="health">HP ${pokemon.stats[0].base_stat}</h5>
         </div>
         <div class="img-container">
-        <img src=${pokemon.sprites.other.dream_world.front_default} alt=${pokemon.name}/>
+        <img src=${pokemon.sprites.front_default} alt=${pokemon.name}/>
         </div>
         <div class="info">
             <h3 class="name">${name}</h3>
@@ -108,7 +108,7 @@ function createPokemonCard(pokemon) {
             <h5 class="health">HP ${pokemon.stats[0].base_stat}</h5>
         </div>
         <div class="img-container">
-        <img src=${pokemon.sprites.other.dream_world.front_default} alt=${pokemon.name}/>
+        <img src=${pokemon.sprites.front_default} alt=${pokemon.name}/>
         </div>
         <div class="info">
             <h3 class="name">${name}</h3>

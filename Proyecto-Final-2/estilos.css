@@ -57,8 +57,7 @@ body {
 .pokemon .img-container {
     margin-left: auto;
     margin-right: auto;
-	width: 120px;
-    height: 180px;
+	width: 200px;
     display: flex;
     text-align: center;
     flex-direction: row;
@@ -66,10 +65,10 @@ body {
 }
 
 .pokemon .img-container img {
-	width: 150px;
-    max-height: 150px;
+	width: 200px;
+    max-height: 300px;
     position: relative;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 .pokemon .info {
