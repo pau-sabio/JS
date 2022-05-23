@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #e0e0e0;
+    color: #1d1d1d;
+    margin-left: 200px;
+    margin-right: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+.poke-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: space-between;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.pokemon {
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.5);
+	margin: 10px;
+    width: 250px;
+	padding: 20px;
+	text-align: center;
+}
+
+.card-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pokemon .number {
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	font-size: 0.8em;
+    padding: 5px 10px;
+    margin-top:  10px;
+}
+
+.pokemon .health {
+    margin-top: 15px;
+}
+
+.pokemon .img-container {
+    margin-left: auto;
+    margin-right: auto;
+	width: 120px;
+    height: 180px;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pokemon .img-container img {
+	width: 150px;
+    max-height: 150px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.pokemon .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemon .name {
+	margin: 15px 15px;
+	letter-spacing: 1px;
+
+}
+
+.pokemon .types{
+    display: flex;
+}
+.pokemon .type-name{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    margin:10px;
+    width: 80px;
+    border-radius: 20px;
+    border: solid 1px black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pokemon .stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.stats h3{
+    font-size: 1rem;
+}
+
+.stats p{
+    font-size: 0.7rem;
+    color: grey;
+    font-weight: 400;
+}
