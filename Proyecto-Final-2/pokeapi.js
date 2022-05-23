@@ -57,7 +57,7 @@ function createPokemonCard(pokemon) {
 	const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
 	const color = colors[type];
 	
-	pokemonEl.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%, #ffffff 36%)`; 
+	//pokemonEl.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%, #ffffff 36%)`; 
     
     // Condicional para comprovar si hay uno o dos tipos de pokemon
 
@@ -94,6 +94,7 @@ function createPokemonCard(pokemon) {
                     </div>
                 </div>
         `;
+
 
 	pokemonEl.innerHTML = pokeInnerHTML;
 
@@ -134,6 +135,14 @@ function createPokemonCard(pokemon) {
 
 	poke_container.appendChild(pokemonEl);
     }
+
+    pokemonEl.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%, #ffffff 36%)`;
+    pokemonEl.style.border = `solid 5px ${color}`;
+
+    
+
+    const typeColor = pokemonEl.querySelector('.type-name')
+    typeColor.style.backgroundColor = color;
 
 }
 
